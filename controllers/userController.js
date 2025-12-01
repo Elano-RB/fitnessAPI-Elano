@@ -17,7 +17,7 @@ module.exports.register = async (req, res) => {
 
         await User.create({ email, password: hashed });
 
-        return res.status(201).send({ message: "Registered successfully" });
+        return res.status(201).send({ message: "Registered Successfully" });
 
     } catch (err) {
         return res.status(500).send({ message: err.message });
